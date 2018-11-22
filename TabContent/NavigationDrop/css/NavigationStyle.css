@@ -1,0 +1,85 @@
+﻿.nav--container
+{
+    display:block;
+    height:auto;
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    box-shadow:0 0 2px #000;
+}
+
+.nav--container ul{
+    list-style:none;
+}
+
+.navigation--holder {
+   text-align:center;
+   display:block;
+   position:relative;
+}
+
+.navigation--holder li {
+    position:relative;
+    cursor: pointer;
+     transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+ }
+
+.navigation--holder > li:hover
+{
+    background-color:tomato;
+}
+
+.navigation--holder > li{
+   display:inline-block;
+   width:100%;
+   max-width:20%;
+   vertical-align:top;
+   padding:12px 6px;
+   background-color:darkgreen;
+   color:#fff;
+}
+
+.subnav--container {
+    display:none;
+    background-color: dimgrey;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border: 1px solid #000;
+    opacity:0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.subnav--container .subnav--container
+{
+    background-color:green;
+    left:100%;
+}
+
+.navigation--holder > li > .subnav--container:first-child {
+    top:100%;
+}
+
+.subnav--container li {
+    padding: 12px 3px;
+    box-shadow: 0 1px 0 #000;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+ .subnav--container li:hover{
+     background:var(--hover-color);
+ }
+
+.nav--item:active > .subnav--container,
+.subnav--container.active {
+    opacity: 1;
+    visibility: visible;
+    display:block;
+    z-index:1;
+}

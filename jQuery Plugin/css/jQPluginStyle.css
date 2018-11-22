@@ -1,0 +1,20 @@
+﻿body *
+{
+    position:relative;
+    margin:0;
+    box-sizing:border-box;
+}
+
+.elem {
+    display:block;
+    position:relative;
+    border: 1px solid #000;
+    width:60px;
+    height: 60px;
+}
+
+.elem.bigger
+{
+    width:100px;
+    height:100px;
+}

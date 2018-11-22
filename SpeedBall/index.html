@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css\SpeedBallStyle.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js\SpeedBallScript.js"></script>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="playing-area">
+            <div class="bar bar-1"></div>
+            <div class="bar bar-2"></div>
+            <div class="ball"></div>
+        </div>
+        <div class="control-panel">
+            <div class="inputs pos1">
+                <label for="left-margin">Left Bar Position</label>
+                <input id="left-margin" type="number" max="2000" class="left-margin pos1" value="0" />
+            </div>
+            <div class="inputs pos2">
+                <label for="animation-speed">Animation Speed</label>
+                <input type="number" max="99999" class="animation-speed pos2" value="10" />
+            </div>
+            <div class="inputs pos3">
+                <label for="right-margin">Right Bar position</label>
+                <input type="number" max="2000" class="right-margin pos3" value="500" />
+            </div>
+            <input type="button" value="Slow down/cancel animation" class="slow-cancel" />
+            <input type="button" value="Start animation" class="start-animation" />
+
+
+
+        </div>
+    </div>
+</body>
+</html>

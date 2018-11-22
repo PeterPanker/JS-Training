@@ -1,0 +1,59 @@
+﻿.container
+{
+    display:block;
+    position:relative;
+    box-sizing:border-box;
+    width:100%;
+    height:auto;
+    border:3px solid #06063b;
+    background-color:antiquewhite;
+    margin:0;
+padding:20px;
+}
+
+.playing-area {
+    display: block;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    box-shadow: 0 0 3px 1px #808080;
+    margin-bottom:50px;
+}
+
+.inputs {
+    display:inline-block;
+    position:relative;
+    width:33%;
+    text-align:center;
+}
+
+.control-panel label {
+    display:block;
+    text-align:center;
+}
+
+.bar {
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width:5px;
+    height:100%;
+    background:#000;
+}
+
+.bar-2{
+    background:red; 
+}
+
+.ball{
+    display:block;
+    position:absolute;
+    top:calc(50% - 10px);
+    left:0;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:green;
+}
