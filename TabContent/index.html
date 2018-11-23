@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -47,6 +47,53 @@
              "https://i.ytimg.com/vi/zSpyvMdRSlY/maxresdefault.jpg",
              "https:\/\/static.helpgoabroad.com\/images\/easyblog\_images\/778/clouds\_landscapes\_rocks\_california\_lakes\_skyscapes\_bing\_1920x1080\_65007.jpg"
             ]);
+        
+            $(".tabElem-1").tabSection(12);
+            $(".tabElem-2").tabSection(6);
+            $(".tabElem-3").tabSection(9);
+
+            $(".slider1").imageSlider([ "https://img.officetimeline.com/website/Content/images/home/layout-view-otl.png",
+            "https://img.officetimeline.com/website/Content/images/home/OTL-import-excel.png",
+            "https://img.officetimeline.com/website/Content/images/features/otl%20hero.png",
+            "https://img.officetimeline.com/website/Content/images/features/slider/gantt-chart-pert.jpg",
+            "https://img.officetimeline.com/website/Content/images/features/slider/gantt-chart-powerpoint.jpg",
+            "https://img.officetimeline.com/website/Content/images/features/slider/gantt-chart-powerpoint.jpg",
+            "https://img.officetimeline.com/website/Content/images/features/slider/gantt-chart-software.jpg",
+            "https://img.officetimeline.com/website/Content/images/features/picello/layout%20view.png",
+            "https://img.officetimeline.com/website/Content/images/features/picello/works%20with%20pptx.png",
+            "https://img.officetimeline.com/website/Content/images/imageCarouselSlider/slide%201.png"],
+            ["Lorem Ipsum slide 1",
+            "Dolor sit amet slide 2",
+            "latin something something slide 3",
+            "Lorem Ipsum slide 4",
+            "Dolor sit amet slide 5",
+            "latin something something slide 6",
+            "Lorem Ipsum slide 7",
+            "Dolor sit amet slide 8",
+            "latin something something slide 9",
+            "Lorem Ipsum slide 10"]
+            );
+
+             $(".slider2").imageSlider([ "https://img.officetimeline.com/website/Content/images/home/layout-view-otl.png",
+            "https://img.officetimeline.com/website/Content/images/home/OTL-import-excel.png",
+            "https://img.officetimeline.com/website/Content/images/features/otl%20hero.png",
+            "https://img.officetimeline.com/website/Content/images/features/slider/gantt-chart-pert.jpg"],
+            ["Lorem Ipsum slide 1",
+            "Dolor sit amet slide 2",
+            "latin something something slide 3",
+            "Lorem Ipsum slide 4"]
+            );
+
+            $(".navigation--menu-1").navMenu();
+            $(".navigation--menu-2").navMenu();
+            $(".navigation--menu-3").navMenu();
+
+            $(".tabHoverContainer-1").imageHoverSelection();
+            $(".tabHoverContainer-2").imageHoverSelection();
+
+            $(".imageSlideCompare-1").slideCompare();
+            $(".imageSlideCompare-2").slideCompare();
+
         });
 
         
@@ -56,36 +103,61 @@
 </head>
 <body>
 
-    <div class="workwork tab--container">
+    <div class="workwork tabElem-1 tab--container">
         <div class="tabs">
             <ul class="tab--list">
-                <li id="tab-1" class="tab--button">
-                    Tab 1
-                </li>
-                <li id="tab-2" class="tab--button">
-                    Tab 2
-                </li>
-                <li id="tab-3" class="tab--button">
-                    Tab 3
-                </li>
-                <li id="tab-4" class="tab--button">
-                    Tab 4
-                </li>
-                <li id="tab-5" class="tab--button">
-                    Tab 5
-                </li>
+                 <!-- this is where the buttons will be injected -->
             </ul>
         </div>
         <div class="tab--display">
-            <div class="tab--content tab-1" data-display="tab-1">Content for Tab 1</div>
-            <div class="tab--content tab-2" data-display="tab-2">Content for Tab 2</div>
-            <div class="tab--content tab-3" data-display="tab-3">Content for Tab 3</div>
-            <div class="tab--content tab-4" data-display="tab-4">Content for Tab 4</div>
-            <div class="tab--content tab-5" data-display="tab-5">Content for Tab 5</div>
+            <!-- this is where the sections will be injected -->
         </div>
     </div>
 
-    <div class="workwork slider--container">
+    <div class="workwork tabElem-2 tab--container">
+        <div class="tabs">
+            <ul class="tab--list">
+                 <!-- this is where the buttons will be injected -->
+            </ul>
+        </div>
+        <div class="tab--display">
+            <!-- this is where the sections will be injected -->
+        </div>
+    </div>
+
+    <div class="workwork tabElem-3 tab--container">
+        <div class="tabs">
+            <ul class="tab--list">
+                 <!-- this is where the buttons will be injected -->
+            </ul>
+        </div>
+        <div class="tab--display">
+            <!-- this is where the sections will be injected -->
+        </div>
+    </div>
+
+
+    <!-- slider -->
+    <div class="workwork slider1 slider--container">
+        <div class="image--container">
+            <div class="slider--limit" style="left:0;">
+                <!-- this is where the containers are placed -->
+            </div>
+        </div>
+        <div class="arrow--container">
+            <div class="arrows arrow--left">
+                <i class="fas fa-chevron-circle-left"></i>
+
+            </div>
+            <div class="arrows arrow--right">
+                <i class="fas fa-chevron-circle-right"></i>
+            </div>
+        </div>
+        <div class="selectors--container">
+        </div>
+    </div>
+
+    <div class="workwork slider2 slider--container">
         <div class="image--container">
             <div class="slider--limit" style="left:0;">
                 <!-- this is where the containers are placed -->
@@ -110,7 +182,7 @@
     <div class="workwork globalImageDisplay imageDisplay--container2">
     </div>
 
-    <div class="workwork nav--container">
+    <div class="workwork navigation--menu-1 nav--container">
         <ul class="navigation--holder">
             <li class="nav--item">
                 Tab 1
@@ -159,24 +231,152 @@
             </li>
         </ul>
     </div>
+    <div class="workwork navigation--menu-2 nav--container">
+        <ul class="navigation--holder">
+            <li class="nav--item">
+                Tab 1
+            </li><li class="nav--item">
+                Tab 2
+            </li><li class="nav--item">
+                Tab 3
+            </li><li class="nav--item">
+                Tab 4
+            </li><li class="nav--item">
+                Tab 5
+                <ul class="subnav--container level-1">
+                    <li class="nav--item">
+                        SubTab 1
+                    </li>
+                    <li class="nav--item">
+                        Subtab 2
+                    </li>
+                    <li class="nav--item">
+                        SubTab 3
+                    </li>
+                    <li class="nav--item">
+                        SubTab 4
+                    </li>
+                    <li class="nav--item">
+                        SubTab 5
+                        <ul class="subnav--container level-2">
+                            <li class="nav--item">
+                                SubTab 1
+                            </li>
+                            <li class="nav--item">
+                                Subtab 2
+                            </li>
+                            <li class="nav--item">
+                                SubTab 3
+                            </li>
+                            <li class="nav--item">
+                                SubTab 4
+                            </li>
+                            <li class="nav--item">
+                                SubTab 5
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="workwork navigation--menu-3 nav--container">
+        <ul class="navigation--holder">
+            <li class="nav--item">
+                Tab 1
+                <ul class="subnav--container level-1">
+                    <li class="nav--item">
+                        SubTab 1
+                    </li>
+                    <li class="nav--item">
+                        Subtab 2
+                        <ul class="subnav--container level-2">
+                            <li class="nav--item">
+                                SubTab 1
+                            </li>
+                            <li class="nav--item">
+                                Subtab 2
+                            </li>
+                            <li class="nav--item">
+                                SubTab 3
+                            </li>
+                            <li class="nav--item">
+                                SubTab 4
+                            </li>
+                            <li class="nav--item">
+                                SubTab 5
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav--item">
+                        SubTab 3
+                    </li>
+                    <li class="nav--item">
+                        SubTab 4
+                    </li>
+                    <li class="nav--item">
+                        SubTab 5
+                    </li>
+                </ul>
+            </li><li class="nav--item">
+                Tab 2
+            </li><li class="nav--item">
+                Tab 3
+                
+            </li><li class="nav--item">
+                Tab 4
+            </li><li class="nav--item">
+                Tab 5
+            </li>
+        </ul>
+    </div>
 
-    <div class="workwork imageSelection--container">
+    <div class="workwork tabHoverContainer-1 imageSelection--container">
         <div class="selection--tabs">
             <ul class="selection--list">
-                <li id="select-1" class="selection--button">
+                <li data-hover-target="select-1" class="selection--button">
                     <p>Tab 1</p>
 
                 </li>
-                <li id="select-2" class="selection--button">
+                <li data-hover-target="select-2" class="selection--button">
                     Tab 2
                 </li>
-                <li id="select-3" class="selection--button">
+                <li data-hover-target="select-3" class="selection--button">
                     Tab 3
                 </li>
-                <li id="select-4" class="selection--button">
+                <li data-hover-target="select-4" class="selection--button">
                     Tab 4
                 </li>
-                <li id="select-5" class="selection--button">
+                <li data-hover-target="select-5" class="selection--button">
+                    Tab 5
+                </li>
+            </ul>
+        </div>
+        <div class="select--display">
+            <div class="select--content select-1" data-display="select-1">Content for Tab 1</div>
+            <div class="select--content select-2" data-display="select-2">Content for Tab 2</div>
+            <div class="select--content select-3" data-display="select-3">Content for Tab 3</div>
+            <div class="select--content select-4" data-display="select-4">Content for Tab 4</div>
+            <div class="select--content select-5" data-display="select-5">Content for Tab 5</div>
+        </div>
+    </div>
+    <div class="workwork tabHoverContainer-2 imageSelection--container">
+        <div class="selection--tabs">
+            <ul class="selection--list">
+                <li data-hover-target="select-1" class="selection--button">
+                    <p>Tab 1</p>
+
+                </li>
+                <li data-hover-target="select-2" class="selection--button">
+                    Tab 2
+                </li>
+                <li data-hover-target="select-3" class="selection--button">
+                    Tab 3
+                </li>
+                <li data-hover-target="select-4" class="selection--button">
+                    Tab 4
+                </li>
+                <li data-hover-target="select-5" class="selection--button">
                     Tab 5
                 </li>
             </ul>
@@ -191,12 +391,11 @@
     </div>
 
 
-
-    <div class="workwork imageComparison--container">
+    <div class="workwork imageSlideCompare-1 imageComparison--container">
         <div class="compareImage--block">
             <div class="image--base image--holder"></div>
-            <div class="image--overlay image--holder"></div>
-            <div id="drop-here" class="dragable--container">
+            <div class="image--over image--holder"></div>
+            <div  class="dragable--container">
                 <div class="dragable--circle">
                     <span class="dragable--text">Drag</br>Me</span>
                     <div class="dragable--element">
@@ -206,7 +405,22 @@
                 
             </div>
         </div>
-        <div id="log"></div>
+    </div>
+
+    <div class="workwork imageSlideCompare-2 imageComparison--container">
+        <div class="compareImage--block">
+            <div class="image--base image--holder"></div>
+            <div class="image--over image--holder"></div>
+            <div  class="dragable--container">
+                <div class="dragable--circle">
+                    <span class="dragable--text">Drag</br>Me</span>
+                    <div class="dragable--element">
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
 </body>
 </html>
