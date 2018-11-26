@@ -32,7 +32,7 @@
     background-image: url(https://img.officetimeline.com/website/Content/images/features/slider/gantt-chart-pert.jpg);
 }
 
-.image--overlay {
+.image--over {
     background-image: url(https://img.officetimeline.com/website/Content/images/features/slider/gantt-chart-powerpoint.jpg);
     overflow:hidden;
     min-height:100%;
@@ -90,7 +90,7 @@
 
 /* test item */
 
-#log {
+.log {
     width:500px;
     height:200px;
     background-color:aliceblue;
