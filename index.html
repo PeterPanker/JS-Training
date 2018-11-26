@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="TabFiles\css\TabStyle.css" />
+    <link rel="stylesheet" type="text/css" href="SliderFiles\css\SliderStyle.css" />
+    <link rel="stylesheet" type="text/css" href="ImageDisplay\css\ImageDisplayStyle.css" />
+    <link rel="stylesheet" type="text/css" href="ImageSelection\css\ImageSelectionStyle.css" />
+    <link rel="stylesheet" type="text/css" href="NavigationDrop\css\NavigationStyle.css" />
+    <link rel="stylesheet" type="text/css" href="SlideComparison\css\SlideComparisonStyle.css" />
+    <link rel="stylesheet" type="text/css" href="globalVariables\css\Variables.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="TabFiles\js\TabScript.js"></script>
+    <script src="SliderFiles\js\SlideScript.js"></script>
+    <script src="ImageDisplay\js\ImageDisplayScript.js"></script>
+    <script src="ImageSelection\js\ImageSelectionScript.js"></script>
+    <script src="NavigationDrop\js\NavigationScript.js"></script>
+    <script src="SlideComparison\js\SlideComparisonScript.js"></script>
+    <meta charset="utf-8" />
+
+    <script type = "text/javascript">
+        $(document).ready(function () {
+            $(".imageDisplay--container").imageDisplay( [
+            "https:\/\/static.helpgoabroad.com\/images\/easyblog\_images\/778/clouds\_landscapes\_rocks\_california\_lakes\_skyscapes\_bing\_1920x1080\_65007.jpg",
+            "https://i.ytimg.com/vi/zSpyvMdRSlY/maxresdefault.jpg",
+            "https://i.pinimg.com/originals/f1/04/83/f10483a79ededaf29a482349f1ec5a2d.jpg",
+            "https://i0.wp.com/www.kingtumblr.com/wp-content/uploads/2018/04/Amazing-Landscapes-Mountains-8.jpg",
+            "https:\/\/static.helpgoabroad.com\/images\/easyblog\_images\/778/clouds\_landscapes\_rocks\_california\_lakes\_skyscapes\_bing\_1920x1080\_65007.jpg",
+            "https://i.ytimg.com/vi/zSpyvMdRSlY/maxresdefault.jpg",
+            "https://i.pinimg.com/originals/f1/04/83/f10483a79ededaf29a482349f1ec5a2d.jpg",
+            "https://i0.wp.com/www.kingtumblr.com/wp-content/uploads/2018/04/Amazing-Landscapes-Mountains-8.jpg",
+            "https:\/\/static.helpgoabroad.com\/images\/easyblog\_images\/778/clouds\_landscapes\_rocks\_california\_lakes\_skyscapes\_bing\_1920x1080\_65007.jpg",
+            "https://i.ytimg.com/vi/zSpyvMdRSlY/maxresdefault.jpg",
+            "https://i.pinimg.com/originals/f1/04/83/f10483a79ededaf29a482349f1ec5a2d.jpg",
+            "https://i0.wp.com/www.kingtumblr.com/wp-content/uploads/2018/04/Amazing-Landscapes-Mountains-8.jpg",
+            "https:\/\/static.helpgoabroad.com\/images\/easyblog\_images\/778/clouds\_landscapes\_rocks\_california\_lakes\_skyscapes\_bing\_1920x1080\_65007.jpg",
+            "https://i.ytimg.com/vi/zSpyvMdRSlY/maxresdefault.jpg",
+            "https://i.pinimg.com/originals/f1/04/83/f10483a79ededaf29a482349f1ec5a2d.jpg",
+            "https://i0.wp.com/www.kingtumblr.com/wp-content/uploads/2018/04/Amazing-Landscapes-Mountains-8.jpg"
+            ]);
+
+
+            $(".imageDisplay--container2").imageDisplay( [
+             "https://i0.wp.com/www.kingtumblr.com/wp-content/uploads/2018/04/Amazing-Landscapes-Mountains-8.jpg",
+             "https://i.pinimg.com/originals/f1/04/83/f10483a79ededaf29a482349f1ec5a2d.jpg",
+             "https://i.ytimg.com/vi/zSpyvMdRSlY/maxresdefault.jpg",
+             "https:\/\/static.helpgoabroad.com\/images\/easyblog\_images\/778/clouds\_landscapes\_rocks\_california\_lakes\_skyscapes\_bing\_1920x1080\_65007.jpg"
+            ]);
+        
+            $(".tab--container").tabSection(12);
+
+        });
+
+        
+        
+    </script>
+    <title></title>
+</head>
+<body>
+
+    <div class="workwork tabElem-1 tab--container">
+        <div class="tabs">
+            <ul class="tab--list">
+                <!-- <li id="tab-1" class="tab--button">
+                    Tab 1
+                </li>
+                <li id="tab-2" class="tab--button">
+                    Tab 2
+                </li>
+                <li id="tab-3" class="tab--button">
+                    Tab 3
+                </li>
+                <li id="tab-4" class="tab--button">
+                    Tab 4
+                </li>
+                <li id="tab-5" class="tab--button">
+                    Tab 5
+                </li> -->
+            </ul>
+        </div>
+        <div class="tab--display">
+            <!-- <div class="tab--content tab-1" data-display="tab-1">Content for Tab 1</div>
+            <div class="tab--content tab-2" data-display="tab-2">Content for Tab 2</div>
+            <div class="tab--content tab-3" data-display="tab-3">Content for Tab 3</div>
+            <div class="tab--content tab-4" data-display="tab-4">Content for Tab 4</div>
+            <div class="tab--content tab-5" data-display="tab-5">Content for Tab 5</div> -->
+        </div>
+    </div>
+
+    <div class="workwork slider--container">
+        <div class="image--container">
+            <div class="slider--limit" style="left:0;">
+                <!-- this is where the containers are placed -->
+            </div>
+        </div>
+        <div class="arrow--container">
+            <div class="arrows arrow--left">
+                <i class="fas fa-chevron-circle-left"></i>
+
+            </div>
+            <div class="arrows arrow--right">
+                <i class="fas fa-chevron-circle-right"></i>
+            </div>
+        </div>
+        <div class="selectors--container">
+        </div>
+    </div>
+
+    <div class="workwork globalImageDisplay imageDisplay--container">
+    </div>
+
+    <div class="workwork globalImageDisplay imageDisplay--container2">
+    </div>
+
+    <div class="workwork nav--container">
+        <ul class="navigation--holder">
+            <li class="nav--item">
+                Tab 1
+            </li><li class="nav--item">
+                Tab 2
+            </li><li class="nav--item">
+                Tab 3
+                <ul class="subnav--container level-1">
+                    <li class="nav--item">
+                        SubTab 1
+                    </li>
+                    <li class="nav--item">
+                        Subtab 2
+                    </li>
+                    <li class="nav--item">
+                        SubTab 3
+                    </li>
+                    <li class="nav--item">
+                        SubTab 4
+                        <ul class="subnav--container level-2">
+                            <li class="nav--item">
+                                SubTab 1
+                            </li>
+                            <li class="nav--item">
+                                Subtab 2
+                            </li>
+                            <li class="nav--item">
+                                SubTab 3
+                            </li>
+                            <li class="nav--item">
+                                SubTab 4
+                            </li>
+                            <li class="nav--item">
+                                SubTab 5
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav--item">
+                        SubTab 5
+                    </li>
+                </ul>
+            </li><li class="nav--item">
+                Tab 4
+            </li><li class="nav--item">
+                Tab 5
+            </li>
+        </ul>
+    </div>
+
+    <div class="workwork imageSelection--container">
+        <div class="selection--tabs">
+            <ul class="selection--list">
+                <li id="select-1" class="selection--button">
+                    <p>Tab 1</p>
+
+                </li>
+                <li id="select-2" class="selection--button">
+                    Tab 2
+                </li>
+                <li id="select-3" class="selection--button">
+                    Tab 3
+                </li>
+                <li id="select-4" class="selection--button">
+                    Tab 4
+                </li>
+                <li id="select-5" class="selection--button">
+                    Tab 5
+                </li>
+            </ul>
+        </div>
+        <div class="select--display">
+            <div class="select--content select-1" data-display="select-1">Content for Tab 1</div>
+            <div class="select--content select-2" data-display="select-2">Content for Tab 2</div>
+            <div class="select--content select-3" data-display="select-3">Content for Tab 3</div>
+            <div class="select--content select-4" data-display="select-4">Content for Tab 4</div>
+            <div class="select--content select-5" data-display="select-5">Content for Tab 5</div>
+        </div>
+    </div>
+
+
+
+    <div class="workwork imageComparison--container">
+        <div class="compareImage--block">
+            <div class="image--base image--holder"></div>
+            <div class="image--overlay image--holder"></div>
+            <div id="drop-here" class="dragable--container">
+                <div class="dragable--circle">
+                    <span class="dragable--text">Drag</br>Me</span>
+                    <div class="dragable--element">
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="log"></div>
+    </div>
+</body>
+</html>
