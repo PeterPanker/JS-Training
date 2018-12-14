@@ -15,7 +15,7 @@
 
 
         moveCircle.on("mousedown", function (event) {
-        console.log("mouse down")
+       // console.log("mouse down")
         $("body").on("mousemove", function (event) {
             var edgeLimit = event.pageX - container.offset().left - moveCircle.width() / 2;
 
@@ -35,7 +35,7 @@
         });
 
         $("body").on("mouseup", function () {
-            console.log("mouse up");
+           // console.log("mouse up");
             $("body").off("mouseup");
             $("body").off("mousemove");
         });

@@ -1,0 +1,11 @@
+﻿:root {
+    --main-color: #ffa500;
+    --hover-color: #ff2500;
+    --second-color: #006700;
+    --second-c-hover:#008100;
+    --animationSpeed: all 0.2s ease-in-out;
+}
+
+.workwork {
+    margin-bottom:30px;
+}

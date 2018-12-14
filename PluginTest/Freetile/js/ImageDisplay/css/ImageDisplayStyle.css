@@ -1,0 +1,64 @@
+﻿.globalImageDisplay {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:flex-start;
+    width:100%;
+    max-width:1200px;
+    height:500px;
+    box-shadow:0 0 1px #000;
+    margin:0 auto;
+}
+
+.image--hover {
+    display: inline-flex;
+    flex: 1 auto;
+    flex-shrink:0.2;
+    height: auto;
+     transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    background-size:cover;
+    box-shadow:-1px 0 1px #000;
+    overflow:hidden;
+    background-color:purple;
+}
+
+.image--hover:hover{
+    flex-grow:12;
+}
+
+.background--overlay .image--overlay {
+    display: block;
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: rgba(0,0,0,0.3);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+.image--hover .click-me {
+    display: block;
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
+    color: #fff;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    vertical-align: middle;
+}
+        .click-me p {
+            display: block;
+            position: absolute;
+            height: 90px;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            margin: 0 auto;
+            text-align: center;
+        }
