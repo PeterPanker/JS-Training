@@ -1,59 +1,60 @@
-var checkPalindrom = [1, 2, 1, 3,1, 4,5,6,5,7,8,9];
+var vector = [2, 5, 2, 6, 9, 12, 7, 7, 8, 7, 1, 7, 1];
+// var vector = [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10, 11, 11, 11, 12, 1, 12, 13, 11, 12, 13, 14, 15, 16, 17, 20, 70, 72, 75, 76, 82, 87, 90, 9, 10, 11, 12, 13, 14, 15, 16, 17, 20, 70, 72, 75, 76, 82, 87, 90];
+var maxLength = vector.length;
 
-var isPalindrom = 1;
-// var limit = Math.floor((checkPalindrom.length - 1) / 2);
-var object = {};
+var checkForPalindrom = function (arr, a, b) {
+    var testArray = [];
+    var index = 0;
+    testArray = arr.slice(a, b +1);
+    var length = testArray.length;
+    var limit = Math.floor(length / 2);
 
-//var palindromFinder = function (arr, a, b) {
-//    var testIndex = 0;
-//    var numberOfPalindroms = 0;
-//    var testArray = arr.slice(a, b + 1);
+    for (var k = 0; k < limit; k++) {
+        if (testArray[k] == testArray[length - 1 - k]) {
+            index++;
+            //break;
+        } else {
+            index = 0;
+        }
+        if (index == limit) {
+            console.log(testArray);
+        }
+    }
 
-//    for (var i = a; i < b + 1; i++) {
-//        if (testArray[i] == testArray[testArray.length - i - 1]) {
-//            testIndex++;
-//            if (testIndex == testArray.length) {
-//                numberOfPalindroms++;
-//                object[numberOfPalindroms] = testArray;
-//                console.log(object);
-//                console.log(numberOfPalindroms);
-//            }
-//            // console.log("i: " + testIndex);
-//        } else {
-//            testIndex = 0;
+}
+
+for (var i = 0; i < maxLength - 1; i++) {
+    for (var j = i + 1; j < maxLength; j++) {
+        // fullArray = vector.slice(i,j);
+        // console.log(fullArray);
+        checkForPalindrom(vector, i, j);
+    }
+}
+
+//checkForPalindrom(vector, 0,maxLength);
+
+
+// for (var k = a; k < b; k++) {
+    //     testArray = arr.slice(a,k+1);
+    //    if ((testArray[k] == testArray[testArray.length - 1 -k]) && (testArray.length > 1)) {
+    //        index++;
+    //        if (index == testArray.length) {
+    //         console.log(testArray);
+    //         }
+    //    } else {
+    //        index = 0;
+    //    }
+    //    console.log("array length: " + testArray.length +" index: " + index + " k: " + k + " b: " + b );
+
+
+//for (var k = 0; k < limit; k++) {
+//    if (testArray[k] !== testArray[length - 1 - k]) {
+//        ++index;
+//        //break;
+//    } else {
+//        if (length > 1) {
+
+//            console.log(testArray);
 //        }
 //    }
 //}
-
-
-//
-var doSlice = function(arr, a, b) {
-   
-    var testArray = arr.slice(a, b + 1);
-    var arrayLimit = testArray.length;
-    var testIndex = 0;
-    for (var i = a; i < b + 1; i++) {
-        var palindrom = 1;
-    
-        var numberOfPalindroms = 0;
-        if (testArray[i] == testArray[arrayLimit - (i + 1)]) {
-            testIndex++;
-            if (testIndex == arrayLimit) {
-                console.log(testIndex, testArray);
-            }
-           
-        } else {
-            testIndex = 0;
-        }
-        
-        //console.log("i: " + i + " - " + "arrayI = " + testArray[i] + "  - array(limit - i) =  " + testArray[arrayLimit - i] + " - testIndex = " + testIndex);
-    }
-    //  console.log(object);
-
-}
-
-for (var i = 0; i < checkPalindrom.length; i++) {
-    for (var j = i + 1; j < checkPalindrom.length; j++) {
-        doSlice(checkPalindrom, i, j);
-    }
-}
