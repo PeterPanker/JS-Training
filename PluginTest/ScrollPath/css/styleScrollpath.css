@@ -11,16 +11,101 @@ body {
     background-color: #d3d3d3;
     color: #fff;
     text-align: center;
+    overflow:hidden;
 }
 
+i.fas {
+    font-family: "Font Awesome 5 Free";
+    font-size:56px;
+    font-weight:600;
+}
+
+.animate-arrow
+{
+    animation: going-down 1s alternate infinite;
+}
+
+@keyframes going-down {
+    from {
+        top:0;
+    }
+    to {
+        top:15px;
+    }
+}
+
+h1 {
+    font-size:56px;
+    font-weight:600;
+    line-height:80px;
+}
+
+p {
+    font-size:32px;
+    line-height:46px;
+}
 
 .test-class {
-    width:100%;
-    max-width:600px;
-    height:100%;
-    min-height:300px;
-    background:green;
-    border:1px solid yellow;
-    margin:0 auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
 }
 
+.canvas-wrapper > div {
+    position:absolute;
+    width:100%;
+    max-width:800px;
+}
+
+.start {
+    top:-100px;
+     left:0;
+}
+
+.elem2 {
+    top: 750px;
+    left: 0;
+}
+
+.elem3 {
+    top:1550px;
+    left:-800px;
+    transform: rotate(-45deg);
+}
+
+.elem4 {
+       top:2150px;
+       left:-1600px;
+       transform: rotate(-90deg);
+}
+.elem5 {
+    top:3930px;
+    left:-1600px;
+    transform: rotate(-180deg);
+}
+
+.elem6 {
+    top: 3950px;
+    left: 0;
+    transform: rotate(-180deg);
+}
+
+.elem7 {
+    top: 2600px;
+    left: 700px;
+    transform: rotate(90deg);
+    max-width:1000px !important;
+}
+
+.elem8 {
+    top: 750px;
+    left: 1600px;
+    transform: rotate(135deg);
+}
+
+.end{
+    top:-50px;
+    left:1200px;
+    transform:rotate(45deg);
+}

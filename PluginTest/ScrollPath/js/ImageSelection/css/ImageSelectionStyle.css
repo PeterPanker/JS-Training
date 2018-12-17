@@ -1,0 +1,82 @@
+﻿.imageSelection--container{
+    display:flex;
+    flex-flow:row wrap;
+    align-content:flex-start;
+    justify-content:space-around;
+    width:100%;
+    max-width:1200px;
+    height:500px;
+    margin:0 auto;
+   }
+
+.selection--tabs {
+    flex:1 auto;
+}
+.select--display {
+    flex:3 auto;
+}
+
+.selection--list {
+    display:flex;
+    list-style: none;
+    flex-flow: column wrap;
+    align-items:stretch;
+    align-content:center;
+    justify-content:space-around;
+    height:auto;
+    min-height:100%;
+    text-align:center;
+    padding:8px;
+}
+
+    .selection--list .selection--button {
+        display: flex;
+        flex-direction:column;
+        flex: 1;
+        align-content: center;
+        justify-content: center;
+        box-shadow: 0 0 2px blue;
+        border-radius: 12px;
+        align-self: stretch;
+        padding: 20px 10px;
+        margin-bottom: 10px;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        background-color:darkolivegreen;
+    }
+    .selection--list .selection--button:last-child{
+        margin-bottom:0px;
+    }
+
+    .selection--list .selection--button:hover,
+    .selection--list .selection--button.active {
+        background-color: darkgreen;
+        color: #fff;
+    }
+
+    .select--display {
+        display: block;
+        padding: 8px;
+    }
+
+.select--display .select--content {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    box-shadow: 0 0 2px #000;
+    border-radius: 12px;
+    visibility:hidden;
+    transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+}
+
+.select--display .select--content.active {
+    visibility:visible;    
+    background:darkorange;
+}
