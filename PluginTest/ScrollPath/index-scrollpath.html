@@ -4,72 +4,131 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css\styleScrollpath.css" />
     <link rel="stylesheet" type="text/css" href="css\customScrollBar.css" />
+    <link rel="stylesheet" type="text/css" href="js\ImageSelection\css\ImageSelectionStyle.css" />
+    <link rel="stylesheet" type="text/css" href="js\SlideComparison\css\SlideComparisonStyle.css" />
+    
 
 </head>
 <body>
 
     <section id="container">
-       <h1>Scrollpath example</h1>
 
-       <nav class="nav-menu">
-           <!-- nav menu widget -->
-       </nav>
 
-       <div class="canvas-wrapper">
-           <div class="test-class section-1">
-               <!-- description/intro -->
-           </div>
+        <nav class="nav-menu">
+            <!-- nav menu widget -->
+        </nav>
 
-           <div class="test-class section-2">
-               <!-- lorem ipsum container -->
-           </div>
+        <div class="canvas-wrapper">
+            <div class="start test-class section-1">
+                <!-- description/intro -->
+                <h1>Scrollpath example</h1>
+                <h2>Start scrolling</h2>
+                <i class="fas fa-angle-down animate-arrow"></i>
+            </div>
 
-           <div class="test-class section-3">
-               <!-- tab targeting widget -->
-           </div>
+            <div class="elem2 test-class section-2">
+                <!-- lorem ipsum container -->
+                <p>Test this plugin along with two other!</p>
+                <p>Keep scrolling</p>
+            </div>
 
-           <div class="test-class section-4">
-               <!-- lorem ipsum container -->
-           </div>
+            <div class="elem3 test-class section-3">
+                <!-- tab targeting widget -->
+                <p>Next is the tab select on hover plugin</p>
+                <p>Just hover over it!</p>
+            </div>
 
-           <div class="test-class section-5">
-               <!-- lorem ipsum container -->
-           </div>
+            <div class="elem4 test-class section-4">
+                <!-- lorem ipsum container -->
+                <div class="workwork tabHoverContainer-1 imageSelection--container">
+                    <div class="selection--tabs">
+                        <ul class="selection--list">
+                            <li data-hover-target="select-1" class="selection--button">
+                                <p>Tab 1</p>
 
-           <div class="test-class section-6">
-               <!-- lorem ipsum container -->
-           </div>
+                            </li>
+                            <li data-hover-target="select-2" class="selection--button">
+                                <p>Tab 2</p>
+                            </li>
+                            <li data-hover-target="select-3" class="selection--button">
+                                <p>Tab 3</p>
+                            </li>
+                            <li data-hover-target="select-4" class="selection--button">
+                                <p>Tab 4</p>
+                            </li>
+                            <li data-hover-target="select-5" class="selection--button">
+                                <p>Tab 5</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select--display">
+                        <div class="select--content select-1" data-display="select-1">Content for Tab 1</div>
+                        <div class="select--content select-2" data-display="select-2">Content for Tab 2</div>
+                        <div class="select--content select-3" data-display="select-3">Content for Tab 3</div>
+                        <div class="select--content select-4" data-display="select-4">Content for Tab 4</div>
+                        <div class="select--content select-5" data-display="select-5">Content for Tab 5</div>
+                    </div>
+                </div>
+            </div>
 
-           <div class="test-class section-7">
-               <!-- slide to compare widget -->
-           </div>
+            <div class="elem5 test-class section-5">
+                <!-- lorem ipsum container -->
+                <p>Great, you made it this far!</p>
+                <p>Now...</p>
+                <p>Keep scrolling!</p>
+            </div>
 
-           <div class="test-class section-8">
-               <!-- lorem ipsum container -->
-           </div>
+            <div class="elem6 test-class section-6">
+                <!-- lorem ipsum container -->
+                <p>Ok now... on the next element...</p>
+                <p>Slide that knob and check the differences!</p>
+            </div>
 
-           <div class="test-class section-9">
-               <!-- lorem ipsum container -->
-           </div>
+            <div class="elem7 test-class section-7">
+                <!-- slide to compare widget -->
+                <div class="workwork imageSlideCompare-1 imageComparison--container">
+                    <div class="compareImage--block">
+                        <div class="image--base image--holder"></div>
+                        <div class="image--over image--holder"></div>
+                        <div class="dragable--container">
+                            <div class="dragable--circle">
+                                <span class="dragable--text">Drag</br>Me</span>
+                                <div class="dragable--element">
 
-       </div>
+                                </div>
+                            </div>
 
-       <section class="maybe-footer">
-           <!-- a possible footer -->
-       </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-   </section>
+            <div class="elem8 test-class section-8">
+                <!-- lorem ipsum container -->
+                <p>Just one more step...</p>
+                <p>You're nearly there</p>
+            </div>
+        </div>
 
-   
+        <section class="maybe-footer">
+            <!-- a possible footer -->
+        </section>
 
-    <script type="text/javascript"  src="js\script-Scrollpath.js"></script>
-    <script type="text/javascript"  src="js\scrollpath-master\script\jquery.scrollpath.js"></script>
+    </section>
+
+
+    
+    <script type="text/javascript" src="js\SlideComparison\js\SlideComparisonScript.js"></script>
+    <script type="text/javascript" src="js\ImageSelection\js\ImageSelectionScript.js"></script>
+    <script type="text/javascript" src="js\script-Scrollpath.js"></script>
+    <script type="text/javascript" src="js\scrollpath-master\script\jquery.scrollpath.js"></script>
 
 
 </body>

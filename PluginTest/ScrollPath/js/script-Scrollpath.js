@@ -1,35 +1,60 @@
 $(document).ready(function () {
 
-    var x = $(window).width(),
-        y = $(window).height(),
-        radius = y / 2;
+    var x = 800,//$(window).width(),
+        y = 800//$(window).height(),
+        radius = 800;
 
     $.fn.scrollPath("getPath")
         //Start encounter
-        .moveTo(x / 2, y / 2, { name: 'start' })
+        .moveTo(x / 2, 0, { name: 'start' })
         //line to the next element
-        .lineTo(x / 2, y * 1.5, { name: 'elem2' })
-        //arc down on the left counterclockwise
-        .arc(x/2, 2 * y, radius, -Math.PI / 2, Math.PI, true, { name: 'elem3' })
-        //arc down to the left, clockwise
-        .arc(1200, 3 * y, radius, 0, Math.PI / 2, false)
-        .lineTo(x / 4, 0, { name: 'elem4' })
-        //arc down counterclockwise, for half a circle
-        .arc(x / 4, y / 2, radius, -Math.PI / 2, Math.PI / 2, true, { name: 'elem5' })
-        //line to right for 'x' px
-        .lineTo(x, 0, { name: 'elem6' })
-        //arc towatrds the top, counterclockwise
-        .arc(2 * x, y / 4, radius, 0, -Math.PI / 2, true, { name: 'elem7' })
-        //arc towards a right top side point, clockwise
-        .arc(1.5 * x, 2 * y, radius, Math.PI, 1.5 * Math.PI, false, { name: 'elem8' })
-        //arc and line towards the end/start, counterclockwise
-        .arc(1.5 * x, radius, 0, 1.5 * Math.PI, true)
-        .lineTo(x / 2, y / 2, { name: 'end' });
-
+        .lineTo(x / 2, 800, { name: 'elem2' })
+        //arc down to the left counterclockwise
+        .arc(400, 1600, radius, -Math.PI / 2, Math.PI, true, {
+            name: 'elem3',
+            rotate: Math.PI / 4
+        })
+        //arc down to the left lower side clockwise
+        .arc(-1200, 1600, radius, 0, Math.PI / 2, false, {
+            name: 'elem4',
+            rotate: Math.PI / 2
+        })
+        //arc half a circle on the lower left side counterclockwise
+        .arc(-1200, 3200, radius, -Math.PI / 2, 0.5 * Math.PI, true, {
+            name: 'elem5',
+            rotate: Math.PI
+        })
+        //line to the right
+        .lineTo(400, 4000, {
+            name: 'elem6',
+        })
+        //arc to the right toward the top
+        .arc(400, 3200, radius, 0.5 * Math.PI, 0, true, {
+            name: 'elem7',
+            rotate: Math.PI * 1.5
+        })
+        //line to the top and arc to the right on the top side counterclockwise
+        .lineTo(1200, 1600)
+        .arc(2000, 1600, radius, Math.PI, -0.5 * Math.PI, false, {
+            name: 'elem8',
+            rotate: Math.PI * 1.25
+        })
+        //line + arc to the left top side, counterclockwise, followed by a line
+        .arc(1200, 800, radius, 0, -0.5 * Math.PI, true)
+        .lineTo(x / 2, 0, {
+            namr: 'end',
+            rotate: Math.PI * 2
+        });
     $('.canvas-wrapper').scrollPath({
-        drawPath: true,
+        drawPath: false,
         wrapAround: true,
         scrollBar: true
     });
+
+    //Image Display Tab on Hover Initialization
+    $(".tabHoverContainer-1").imageHoverSelection();
+
+    //Initialise the Slide Compare widget
+    $(".imageSlideCompare-1").slideCompare();
 
 });
