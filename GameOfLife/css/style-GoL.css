@@ -1,0 +1,36 @@
+﻿body {
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/darkness.png");
+    color:#FFF;
+}
+
+body * {
+    margin:0;
+    padding:0;
+    display:block;
+    position:relative;
+}
+
+h1 {
+
+    text-align:center;
+}
+
+#grid-space
+{
+    border:2px solid yellow;
+    margin:0 auto;
+}
+
+.startLife
+{
+    float:left;
+    background:red;
+    font-size:32px;
+    padding:10px 15px;
+   
+}
+
+
+.startLife:hover{
+    cursor:pointer;
+}

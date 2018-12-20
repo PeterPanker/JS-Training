@@ -7,11 +7,12 @@
     font-family: 'Comfortaa', cursive;
 }
 body {
-    background-image: url('../images/classy_fabric.png');
+    /*background-image: url('../images/classy_fabric.png');*/
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/darkness.png");
     background-color: #d3d3d3;
     color: #fff;
     text-align: center;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 i.fas {
