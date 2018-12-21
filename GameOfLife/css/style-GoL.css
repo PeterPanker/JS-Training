@@ -21,16 +21,97 @@ h1 {
     margin:0 auto;
 }
 
-.startLife
-{
-    float:left;
-    background:red;
-    font-size:32px;
-    padding:10px 15px;
-   
+.button-container {
+    float: left;
+    max-width: 200px;
+    padding: 15px;
+    font-size: 32px;
+    text-align:center;
+}
+
+.startStopLife {
+    background: red;
+    padding: 10px 15px;
 }
 
 
-.startLife:hover{
-    cursor:pointer;
+.startStopLife:hover,
+.oneStep {
+    cursor: pointer;
+}
+
+.oneStep {
+    background: green;
+    padding: 10px 15px;
+}
+
+.speed
+{
+    background-color:darkorange;
+    padding:10px 15px 20px;
+}
+
+.speed p
+{
+    padding-bottom:5px;
+}
+
+.rangeSelector{
+    display:block;
+    position:relative;
+    width:100%;
+    height:40px;
+}
+.selector-line
+{
+    display:block;
+    position:absolute;
+    left:0;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:100%;
+    height:3px;
+    background:#000;
+    border-radius:5px;
+    margin:0 auto;
+}
+
+.selector-knob {
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 3px;
+    background: #fff;
+    border:1px solid blue;
+}
+
+.step-display
+{
+    display:block;
+    position:relative;
+    width:100%;
+    height:28px;
+    background:#000;
+    color:#fff;
+    font-size:24px;
+    text-align:center;
+}
+
+.speed input[type="range"] {
+    /*height: 10px;
+    color: #000;
+    background-color: #808080;
+    width: 100%;*/
+    -webkit-appearance: none;
+    border-radius: 6px;
+    height: 6px;
+}
+
+.gridSize {
+    background-color:seagreen;
+    padding: 10px 15px 20px;
 }
