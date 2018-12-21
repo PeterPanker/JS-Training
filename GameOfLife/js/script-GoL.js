@@ -236,9 +236,11 @@ moveKnob.css("left", 0);
         var knob = this.find(moveKnob);
         var stepDisplay = this.find($('.step-display'));
         var step;
+        var currentStep;
         knob.on("mousedown", function (event) {
             $("body").on("mousemove", function (event) {
                 var edgeLimit = event.pageX - knobContainer.offset().left;
+                var currentEdgeLimit = event.pageX - knobContainer.offset().left;
 
                 if (edgeLimit < 0) {
                     edgeLimit = 0;
@@ -248,9 +250,19 @@ moveKnob.css("left", 0);
                 }
 
                 knob.css("left", edgeLimit + "px");
-                step = Math.ceil(rangeWidth / segments);
-                stepDisplay.text(step);
+                step = rangeWidth / segments;
+                currentStep = Math.ceil(currentEdgeLimit / step);
+
+                if (currentEdgeLimit < 0) {
+                    currentEdgeLimit = 0;
+                }
+                else if (currentEdgeLimit > rangeWidth) {
+                    currentEdgeLimit = rangeWidth;
+                }
+
+                stepDisplay.text(currentStep);
                 console.log(step);
+                console.log(currentStep);
                 $("body").on("mouseup", function () {
                     // console.log("mouse up");
                     $("body").off("mouseup");
